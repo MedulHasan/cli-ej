@@ -1,0 +1,150 @@
+import { Dimensions, StyleSheet } from "react-native";
+import { customPixel } from "../../Utilities/CustomStyleAttribute/CustomPixel";
+
+const { height, width } = Dimensions.get("window");
+
+export const MyRefundStyle = StyleSheet.create({
+    container: {
+        backgroundColor: "#fff",
+        minHeight:
+            height < 534 ? height - customPixel.h100 : height - customPixel.h95,
+        paddingHorizontal: customPixel.h20,
+    },
+    noRefund: {
+        borderWidth: 1,
+        borderColor: "#DFDFDF",
+        borderRadius: 6,
+        paddingHorizontal: customPixel.h54,
+        paddingVertical: customPixel.h50,
+    },
+    noRefundText: {
+        fontFamily: "DMSans_500Medium",
+        fontSize: customPixel.h14,
+        color: "#898989",
+        textAlign: "center",
+    },
+    lastRefund: {
+        flexDirection: "row",
+        justifyContent: "space-between",
+        borderWidth: 1,
+        borderColor: "#DFDFDF",
+        borderRadius: 6,
+        paddingHorizontal: customPixel.h15,
+        paddingVertical: customPixel.h12,
+    },
+    title: {
+        fontFamily: "DMSans_700Bold",
+        fontSize: customPixel.h14,
+        color: "#2C2C2C",
+    },
+    text1: {
+        fontFamily: "Roboto_500Medium",
+        fontSize: customPixel.h11,
+        color: "#898989",
+        marginTop: customPixel.h11,
+    },
+    text2: {
+        fontFamily: "DMSans_500Medium",
+        fontSize: customPixel.h14,
+        color: "#2C2C2C",
+        marginTop: customPixel.h3,
+    },
+    attribute: {
+        fontFamily: "Roboto_500Medium",
+        fontSize: customPixel.h10,
+        color: "#898989",
+        marginTop: customPixel.h5,
+    },
+    imgCont: {
+        height: customPixel.h50,
+        width: customPixel.h50,
+        marginTop: customPixel.h9,
+        backgroundColor: "#F3F3F3",
+        borderRadius: 4,
+        flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center",
+    },
+    img: {
+        height: customPixel.h35,
+        width: customPixel.h35,
+    },
+    refundList: {
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
+        marginTop: customPixel.h20,
+        borderWidth: 1,
+        borderColor: "#DFDFDF",
+        borderRadius: 6,
+        padding: 15,
+    },
+    listText: {
+        fontFamily: "DMSans_500Medium",
+        fontSize: customPixel.h14,
+        color: "#2C2C2C",
+    },
+    supportCont: {
+        flexDirection: "row",
+        marginTop: customPixel.h20,
+        borderWidth: 1,
+        borderColor: "#2C2C2C",
+        borderRadius: 6,
+    },
+    headphoneCont: {
+        backgroundColor: "#2C2C2C",
+        paddingHorizontal: customPixel.h19,
+        paddingVertical: customPixel.h22,
+    },
+    contactCont: {
+        width: customPixel.wF - customPixel.h20 * 2 - customPixel.h80 - 2,
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
+        paddingHorizontal: customPixel.h14,
+    },
+    contactText: {
+        fontFamily: "DMSans_500Medium",
+        fontSize: customPixel.h13,
+        color: "#898989",
+    },
+    contactNum: {
+        fontFamily: "DMSans_700Bold",
+        fontSize: customPixel.h20,
+        color: "#2C2C2C",
+        marginTop: customPixel.h5,
+    },
+    nextBtn: {
+        backgroundColor: "#FCCA19",
+        height: customPixel.h40,
+        width: customPixel.h40,
+        flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center",
+        borderRadius: 6,
+    },
+    requestRefund: {
+        position: "absolute",
+        bottom: customPixel.h6,
+        left: customPixel.h20,
+        right: customPixel.h20,
+        backgroundColor: "#FCCA19",
+        paddingVertical: customPixel.h17,
+        borderRadius: 6,
+    },
+    requestRefundLoading: {
+        position: "absolute",
+        bottom: customPixel.h6,
+        left: customPixel.h20,
+        right: customPixel.h20,
+        backgroundColor: "#FCCA19",
+        paddingVertical: customPixel.h10,
+        borderRadius: 6,
+    },
+    requestText: {
+        textAlign: "center",
+        fontFamily: "DMSans_700Bold",
+        fontSize: customPixel.h18,
+        color: "#2C2C2C",
+    },
+});
